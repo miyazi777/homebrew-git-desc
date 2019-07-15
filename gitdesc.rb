@@ -2,11 +2,11 @@
 class Gitdesc < Formula
   desc "Git descrption CLI Tool"
   homepage "https://github.com/miyazi777/gitdesc"
-  version "0.1.1"
+  version "0.1.2"
 
   if OS.mac?
-    url "https://github.com/miyazi777/gitdesc/releases/download/v0.1.1/gitdesc_0.1.1_darwin_amd64.tar.gz"
-    sha256 "0c8019b17f23ea0362fb54bf08ceb23106982684b5be32fd0157402b25fffb3a"
+    url "https://github.com/miyazi777/gitdesc/releases/download/v0.1.2/gitdesc_0.1.2_darwin_amd64.tar.gz"
+    sha256 "d0662c5d46f8501b4d6e62a22ec9ed8fa930329860aa502120eed047d43b054a"
   elsif OS.linux?
   end
 
