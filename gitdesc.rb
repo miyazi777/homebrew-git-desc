@@ -2,19 +2,20 @@
 class Gitdesc < Formula
   desc "Git descrption CLI Tool"
   homepage "https://github.com/miyazi777/gitdesc"
-  version "0.1.2"
+  version "0.1.3"
+  bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/miyazi777/gitdesc/releases/download/v0.1.2/gitdesc_0.1.2_darwin_amd64.tar.gz"
-    sha256 "d0662c5d46f8501b4d6e62a22ec9ed8fa930329860aa502120eed047d43b054a"
+    url "https://github.com/miyazi777/gitdesc/releases/download/v0.1.3/gitdesc_0.1.3_darwin_amd64.tar.gz"
+    sha256 "de9a4fff51f3176384854b4fe98f0bbdd45c01f41648ed175a5e4fa2540183e9"
   elsif OS.linux?
   end
 
   def install
-    bin.install Dir['gitdesc']
+    bin.install Dir['git-desc']
   end
 
   test do
-    system "#{bin}/gitdesc"
+    system "#{bin}/git-desc"
   end
 end
